@@ -1,0 +1,45 @@
+Jinja2==2.7.3
+MarkupSafe==0.23
+Werkzeug==0.10.4
+itsdangerous==0.24
+wsgiref==0.1.2
+
+## For API server
+flask
+flask_restful
+pyxb
+sqlalchemy
+snakebite==1.3.8
+## For DeepWalk
+wheel>=0.23.0
+#Cython>=0.20.2
+Cython==0.22
+argparse>=1.2.1
+futures>=2.1.6
+six>=1.7.3
+numpy
+gensim
+scipy
+psutil>=2.1.1
+pandas
+GenericCache
+sklearn
+
+nltk
+#import nltk; nltk.download(); d stopwords; d punkt
+inflection
+matplotlib
+#on mac: vi .matplotlib/matplotlibrc; backend: TkAgg
+#on centos: sudo yum install freetype-devel, sudo yum install libpng-devel
+theano
+#edit .theanorc to make [global] \n floatX = float32
+#on centos: sudo yum install python-devel python-nose python-setuptools gcc gcc-gfortran gcc-c++ blas-devel lapack-devel atlas-devel
+#on mac:download and install hdf5 from src, ./configure; make; make install;
+#on centos: sudo yum install hdf5-devel
+#add HDF5_DIR to env
+h5py
+tables
+#on centos, run with gunicorn and nginx, make sure nginx /etc/nginx/conf.d/fsu.conf client_max_body_size 2G
+#gunicorn --timeout=3600
+
+
